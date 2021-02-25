@@ -34,9 +34,11 @@ func main() {
 
 func handleMain(w http.ResponseWriter, r *http.Request) {
 	var htmlIndex = `<html>
-	<p>Login or Register with:</p>
-<body><a href="/login">GOOGLE</a></body>
-</html>`
+	<body>
+	<h3>Login or Register with:</h3>
+	<a href="/login">GOOGLE</a>
+	</body>
+	</html>`
 
 	fmt.Fprintf(w, htmlIndex)
 }
